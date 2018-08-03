@@ -20,10 +20,10 @@ Current build status
 
 Current release info
 ====================
-[![Conda Recipe](https://img.shields.io/badge/recipe-r--labdsv-green.svg)](https://anaconda.org/conda-forge/r-labdsv)
-[![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv)
-[![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv)
-[![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--labdsv-green.svg)](https://anaconda.org/conda-forge/r-labdsv) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-labdsv.svg)](https://anaconda.org/conda-forge/r-labdsv) |
 
 Installing r-labdsv
 ===================
