@@ -1,4 +1,4 @@
-{% set version = '1.8-0' %}
+{% set version = "2.0-1" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/labdsv_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/labdsv/labdsv_{{ version }}.tar.gz
-  sha256: dfaeb03a6e1bab6cfd384c00671235b22f2b4254cac1129b24a348cb353b6e65
+  sha256: 5a4d55e9be18222dc47e725008b450996448ab117d83e7caaa191c0f13fd3925
 
 build:
   merge_build_host: True  # [win]
-  number: 1002
+  number: 0
   skip: true  # [win32]
 
   rpaths:
