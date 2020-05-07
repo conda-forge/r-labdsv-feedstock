@@ -51,7 +51,7 @@ test:
 
 about:
   home: http://ecology.msu.montana.edu/labdsv/R
-  license: GPL (>= 2)
+  license: GPL-2.0-or-later
   summary: A variety of ordination and community analyses useful in analysis of data sets in
     community ecology.   Includes many of the common ordination methods, with  graphical
     routines to facilitate their interpretation,  as well as several novel analyses.
