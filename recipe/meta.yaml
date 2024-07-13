@@ -1,6 +1,5 @@
 {% set version = "2.1-0" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-labdsv
@@ -13,8 +12,7 @@ source:
   sha256: 99da92515e9aa49ea7f3df7e301ef714c57054a3838139cd3fd798531d625cd1
 
 build:
-  merge_build_host: true  # [win]
-  number: 1
+  number: 2
   rpaths:
     - lib/R/lib/
     - lib/
@@ -22,7 +20,9 @@ build:
 requirements:
   build:
     - {{ compiler('c') }}              # [not win]
+    - {{ stdlib("c") }}                # [not win]
     - {{ compiler('m2w64_c') }}        # [win]
+    - {{ stdlib("m2w64_c") }}          # [win]
     - {{ compiler('fortran') }}        # [not win]
     - {{ compiler('m2w64_fortran') }}  # [win]
     - {{ posix }}filesystem        # [win]
@@ -38,7 +38,6 @@ requirements:
     - r-mgcv
   run:
     - r-base
-    - {{ native }}gcc-libs         # [win]
     - r-mass
     - r-rtsne
     - r-cluster
