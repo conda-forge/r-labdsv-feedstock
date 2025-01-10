@@ -12,7 +12,7 @@ source:
   sha256: 99da92515e9aa49ea7f3df7e301ef714c57054a3838139cd3fd798531d625cd1
 
 build:
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
@@ -30,6 +30,11 @@ requirements:
     - {{ posix }}sed               # [win]
     - {{ posix }}coreutils         # [win]
     - {{ posix }}zip               # [win]
+    - cross-r-base {{ r_base }}    # [build_platform != target_platform]
+    - r-mass                       # [build_platform != target_platform]
+    - r-rtsne                      # [build_platform != target_platform]
+    - r-cluster                    # [build_platform != target_platform]
+    - r-mgcv                       # [build_platform != target_platform]
   host:
     - r-base
     - r-mass
@@ -52,7 +57,6 @@ about:
   home: http://ecology.msu.montana.edu/labdsv/R
   license: GPL-2.0-or-later
   summary: A variety of ordination and community analyses useful in analysis of data sets in community ecology.   Includes many of the common ordination methods, with  graphical routines to facilitate their interpretation,  as well as several novel analyses.
-  license_family: GPL3
   license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-2
 
 extra:
