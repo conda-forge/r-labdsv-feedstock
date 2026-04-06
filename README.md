@@ -7,7 +7,7 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-labdsv-feedst
 About r-labdsv
 --------------
 
-Home: http://ecology.msu.montana.edu/labdsv/R
+Home: https://cran.r-project.org/package=labdsv
 
 Package license: GPL-2.0-or-later
 
@@ -16,7 +16,7 @@ Summary: A variety of ordination and community analyses useful in analysis of da
 About r-labdsv
 --------------
 
-Home: http://ecology.msu.montana.edu/labdsv/R
+Home: https://cran.r-project.org/package=labdsv
 
 Package license: GPL-2.0-or-later
 
