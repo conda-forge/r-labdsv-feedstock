@@ -3,7 +3,7 @@
 
 package:
   name: r-labdsv
-  version: {{ version|replace("-", "_") }}
+  version: "{{ version|replace("-", "_") }}"
 
 source:
   url:
@@ -58,7 +58,7 @@ test:
     - "\"%R%\" -e \"library('labdsv')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/package=labdsv
+  home: https://CRAN.R-project.org/package=labdsv
   license: GPL-2.0-or-later
   summary: A variety of ordination and community analyses useful in analysis of data sets in community ecology.   Includes many of the common ordination methods, with  graphical routines to facilitate their interpretation,  as well as several novel analyses.
   license_family: GPL2
