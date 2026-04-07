@@ -1,4 +1,4 @@
-{% set version = "2.3-0" %}
+{% set version = "2.3-1" %}
 {% set posix = 'm2-' if win else '' %}
 
 package:
@@ -9,7 +9,7 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/labdsv_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/labdsv/labdsv_{{ version }}.tar.gz
-  sha256: 7eabdf02c4ab429febc954176bdc4ea3fed236621515ebbe766f8bd5665d46e9
+  sha256: e2880a3e9406061f4f57322102817fa6ce3c045b94d5ec3e2751b05ebb45dfff
 
 build:
   number: 0
@@ -58,7 +58,7 @@ test:
     - "\"%R%\" -e \"library('labdsv')\""  # [win]
 
 about:
-  home: https://cran.r-project.org/package=labdsv
+  home: https://CRAN.R-project.org/package=labdsv
   license: GPL-2.0-or-later
   summary: A variety of ordination and community analyses useful in analysis of data sets in community ecology.   Includes many of the common ordination methods, with  graphical routines to facilitate their interpretation,  as well as several novel analyses.
   license_family: GPL2
